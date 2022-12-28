@@ -1,0 +1,29 @@
+[package]
+name = "graphul"
+version = "0.4.5"
+edition = "2021"
+license = "MIT"
+categories = ["asynchronous", "network-programming", "web-programming::http-server"]
+keywords = ["http", "web", "framework"]
+description = "Optimize, speed, scale your microservices and save money 💵"
+homepage = "https://graphul-rs.github.io/"
+documentation = "https://graphul-rs.github.io/"
+repository = "https://github.com/graphul-rs/graphul"
+readme = "README.md"
+
+[dependencies]
+hyper = { version = "0.14", features = ["full"] }
+tokio = { version = "1", features = ["full"] }
+tokio-util = { version = "0.7", features = ["io"] }
+axum = { version = "0.6", features = ["multipart"] }
+askama = "0.11"
+futures = "0.3.24"
+tower = { version = "0.4", features = ["util"] }
+num_cpus = "1.13.1"
+async-trait = "0.1.58"
+tower-layer = "0.3"
+serde_path_to_error = "0.1.8"
+serde_json = "1.0.86"
+serde = "1.0"
+serde_urlencoded = "0.7"
+tower-http = { version = "0.3.0", features = ["full"] }
